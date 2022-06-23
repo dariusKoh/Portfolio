@@ -1,149 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Darius' Portfolio</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&display=swap" rel="stylesheet">    
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="img/devjane.png" alt="">
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Darius' Portfolio</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+            
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&display=swap" rel="stylesheet">    
+            <link rel="stylesheet" href="css/style.css">
+        </head>
+        <body>
+            <header>
+                <div class="logo">
+                    <img src="img/devjane.png" alt="">
+                </div>
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#competitions" class="nav__link">Competitions</a></li>
+                        <li class="nav__item"><a href="#enrichment" class="nav__link">Enrichment</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    </ul>
+                </nav>
+            </header>    
+
+            <!-- Introduction -->
+            <section class="intro" id="home">
+                <h1 class="section__title section__title--intro">
+                    Hi, I am <strong>Darius Koh</strong>
+                </h1>
+                <p class="section__subtitle section__subtitle--intro">Student</p>
+                <img src="img/darius.jpeg" alt="darius pic">
+            </section>
+            
+            <!-- Competitions -->
+            <section class="competitions" id="competitions">
+                <h2 class="section__title">Competitions</h2>
+                <p class="section__subtitle"></p>
+                
+                <div class="competitions">
+                    <!-- competitions item 01 -->
+                    <a href="#" class="competition__item">
+                        <img src="" alt="" class="">
+                    </a>
+                    
+                    <!-- competitions item 02 -->
+                    <a href="#" class="competition__item">
+                        <img src="" alt="" class="">
+                    </a>
+                    
+                    <!-- competitions item 03 -->
+                    <a href="#" class="competition__item">
+                        <img src="" alt="" class="">
+                    </a>
+                    
+                    <!-- competitions item 04 -->
+                    <a href="#" class="competition__item">
+                        <img src="" alt="" class="">
+                    </a>
+                </div>
+            </section>
+
+        <!-- Enrichment -->
+        <section class="enrichment" id="enrichment">
+            <h2 class="section__title">Enrichment</h2>
+            <p class="section__subtitle"></p>
+            
+            <div class="enrichment">
+                <!-- enrichment item 01 -->
+                <a href="#" class="enrichment__item">
+                    <img src="" alt="" class="">
+                </a>
+                
+                <!-- enrichment item 02 -->
+                <a href="#" class="enrichment__item">
+                    <img src="" alt="" class="">
+                </a>
+                
+                <!-- enrichment item 03 -->
+                <a href="#" class="enrichment__item">
+                    <img src="" alt="" class="">
+                </a>
+                
+                <!-- enrichment item 04 -->
+                <a href="#" class="enrichment__item">
+                    <img src="" alt="" class="">
+                </a>
             </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#competitions" class="nav__link">Competitions</a></li>
-                    <li class="nav__item"><a href="#enrichment" class="nav__link">Enrichment</a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+        </section>
+
+        <!-- Projects -->
+            <section class="user-details" id="projects">
+                <h2 class="section__title"> My Projects </h2>
+                <p class="section__subtitle"></p>
+            <!-- project item 01 -->
+            <div class="projects">
+                <!-- project item 01 image -->
+                <div class="images">
+                    <img alt="MacRitchieTrails" src="img/MacRitchieTrails.webp"/>
+                </div>
+                <!-- project item 01 contents -->
+                <div class="contents">
+                    <h3> Project Title </h3>
+                <ul>
+                    <li> Project Detials </li>
                 </ul>
-            </nav>
-        </header>    
-
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Darius Koh</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">Student</p>
-            <img src="img/darius.jpeg" alt="darius pic">
-        </section>
-         
-        <!-- Competitions -->
-        <section class="competitions" id="competitions">
-            <h2 class="section__title">Competitions</h2>
-            <p class="section__subtitle"></p>
-             
-            <div class="competitions">
-                <!-- competitions item 01 -->
-                <a href="#" class="competition__item">
-                    <img src="" alt="" class="">
-                </a>
-                 
-                <!-- competitions item 02 -->
-                <a href="#" class="competition__item">
-                    <img src="" alt="" class="">
-                </a>
-                 
-                <!-- competitions item 03 -->
-                <a href="#" class="competition__item">
-                    <img src="" alt="" class="">
-                </a>
-                 
-                <!-- competitions item 04 -->
-                <a href="#" class="competition__item">
-                    <img src="" alt="" class="">
-                </a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <!-- project item 01 link -->
+                <a class="project-link" href="#">Check it out</a>
+                </div>
             </div>
-        </section>
 
-    <!-- Enrichment -->
-    <section class="enrichment" id="enrichment">
-        <h2 class="section__title">Enrichment</h2>
-        <p class="section__subtitle"></p>
-        
-        <div class="enrichment">
-            <!-- enrichment item 01 -->
-            <a href="#" class="enrichment__item">
-                <img src="" alt="" class="">
-            </a>
-            
-            <!-- enrichment item 02 -->
-            <a href="#" class="enrichment__item">
-                <img src="" alt="" class="">
-            </a>
-            
-            <!-- enrichment item 03 -->
-            <a href="#" class="enrichment__item">
-                <img src="" alt="" class="">
-            </a>
-            
-            <!-- enrichment item 04 -->
-            <a href="#" class="enrichment__item">
-                <img src="" alt="" class="">
-            </a>
-        </div>
-    </section>
-
-    <!-- Projects -->
-        <section class="user-details" id="projects">
-            <h2 class="section__title"> My Projects </h2>
-            <p class="section__subtitle"></p>
-        <!-- project item 01 -->
-        <div class="projects">
-            <!-- project item 01 image -->
-            <div class="images">
-                <img alt="MacRitchieTrails" src="img/MacRitchieTrails.webp"/>
-            </div>
-            <!-- project item 01 contents -->
-            <div class="contents">
+            <!-- project item 02 -->
+            <div class="projects">
+                <!-- project item 02 image -->
+                <div class="images">
+                <img alt="AGC1" src="img/agc1.jpeg"/>
+                </div>
+                <!-- project item 01 contents -->
+                <div class="contents">
                 <h3> Project Title </h3>
-              <ul>
-                <li> Project Detials </li>
-              </ul>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <!-- project item 01 link -->
-              <a class="project-link" href="#">Check it out</a>
+                <ul>
+                    <li> Project Details </li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <!-- project item 01 link -->
+                <a class="project-link" href="#">Check it out</a>
+                </div>
             </div>
-          </div>
-          <!-- project item 02 -->
-          <div class="projects">
-            <!-- project item 02 image -->
-            <div class="images">
-              <img alt="AGC1" src="img/agc1.jpeg"/>
-            </div>
-            <!-- project item 01 contents -->
-            <div class="contents">
-              <h3> Project Title </h3>
-              <ul>
-                <li> Project Details </li>
-              </ul>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-               <!-- project item 01 link -->
-              <a class="project-link" href="#">Check it out</a>
-            </div>
-          </div>
 
-    </section>
-    
-     <!-- Footer -->
-     <footer>
-        <!-- email address -->
-        <a href="mailto:darius_koh_kai_keat@s2019.ssts.edu.sg" class="footer__link">darius_koh_kai_keat@s2019.ssts.edu.sg</a>
-        <!-- list of socials -->
-        <ul class="social-list">
-            <li class="social-list__item"><a class="social-list__link" href="https://github.com">a</a></li>
-        </ul>
-    </footer>
+            <!-- project item 03 -->
+            <div class="projects">
+                <!-- project item 02 image -->
+                <div class="images">
+                <img alt="AGC1" src="img/agc1.jpeg"/>
+                </div>
+                <!-- project item 01 contents -->
+                <div class="contents">
+                <h3> Project Title </h3>
+                <ul>
+                    <li> Project Details </li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <!-- project item 01 link -->
+                <a class="project-link" href="#">Check it out</a>
+                </div>
+            </div>
 
-    </body>
-</html>
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+            <!-- email address -->
+            <a href="mailto:darius_koh_kai_keat@s2019.ssts.edu.sg" class="footer__link">darius_koh_kai_keat@s2019.ssts.edu.sg</a>
+            <!-- list of socials -->
+            <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="https://github.com">a</a></li>
+            </ul>
+        </footer>
+
+        </body>
+    </html>
