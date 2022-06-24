@@ -7,15 +7,15 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-    --ff-primary: 'Lato', sans-serif;
-    --ff-secondary: 'Montserrat', sans-serif;
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
     
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --clr-light: #ffffff;
+    --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #4169E1;
+    --clr-accent: #16e0bd;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -35,8 +35,8 @@
 /* General styles */
 
 body {
-    background: var(--clr-dark);
-    color: var(--clr-light);
+    background: var(--clr-light);
+    color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -81,7 +81,8 @@ h3 { font-size: var(--fs-h3) }
     font-size: var(--fs-h3);
 }
 
-.section__subtitle--intro {
+.section__subtitle--intro,
+.section__subtitle--about {
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
 }
