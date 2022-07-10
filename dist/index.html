@@ -26,11 +26,13 @@
   </head>
 
   <body>
-    <nav
+    
+    <header class="sticky top-0 z-50">
+      <nav
       role="navigation"
-      class="flex justify-between items-center h-16 bg-gradient-to-b from-gray-900 to-blue-900 relative"
+      class="flex justify-between items-center h-16 bg-black text-white relative"
     >
-      <a href="index.html" class="pl-6 text-2xl">Darius Koh</a>
+      <a href="index.html" class="pl-6 text-2xl text-gray-400">Darius Koh</a>
       <div
         class="px-6 cursor-pointer md:hidden hover\:bg-clip-border"
         id="bars"
@@ -38,48 +40,48 @@
         <i class="fa-solid fa-bars"></i>
       </div>
       <div class="hidden md:block items-center" id="menu">
-        <a href="#" class='p-4 text-body'>Home</a>
+        <a href="#" class='p-4 hover:text-bold'>Home</a>
         <a href="#" class="p-4">Introduction</a>
         <a href="#Competitions" class="p-4">Competitions</a>
         <a href="#" class="p-4">Enrichment</a>
         <a href="#" class="p-4">Projects</a>
       </div>
     </nav>
-    <header>
-      <div class="header bg-body text-white text-center relative">
-        <h1>
-          <span class="site-title text-6xl">Darius Koh</span>
-        </h1>
-        <div class="header-icons text-6xl">
-          <a
-            aria-label="Send email"
-            href="mailto:darius_koh_kai_keat@s2019.ssts.edu.sg"
-            ><i
-              class="icon fa fa-envelope transform hover:text-black"
-              aria-hidden="true"
-            ></i
-          ></a>
-          <a
-            aria-label="My Github"
-            target="_blank"
-            href="https://github.com/dariusKoh"
-            ><i
-              class="icon fa fa-github transform hover:text-black"
-              aria-hidden="true"
-            ></i
-          ></a>
-        </div>
-
-        <div class="header-links">
-          <a class="link" href="#competitions" data-scroll>Competitions</a>
-          <a class="link" href="#enrichment" data-scroll>Enrichment</a>
-          <a class="link" href="#projects" data-scroll>Projects</a>
-        </div>
-      </div>
-      <a class="down" href="#about" data-scroll
-        ><i class="icon fa fa-chevron-down" aria-hidden="true"></i
-      ></a>
     </header>
+
+    <div class="header bg-body text-white text-center relative">
+      <h1>
+        <span class="site-title text-6xl">Darius Koh</span>
+      </h1>
+      <div class="header-icons text-6xl">
+        <a
+          aria-label="Send email"
+          href="mailto:darius_koh_kai_keat@s2019.ssts.edu.sg"
+          ><i
+            class="icon fa fa-envelope transform hover:text-gray-500"
+            aria-hidden="true"
+          ></i
+        ></a>
+        <a
+          aria-label="My Github"
+          target="_blank"
+          href="https://github.com/dariusKoh"
+          ><i
+            class="icon fa fa-github transform hover:text-gray-500"
+            aria-hidden="true"
+          ></i
+        ></a>
+      </div>
+
+      <div class="header-links">
+        <a class="link" href="#competitions" data-scroll>Competitions</a>
+        <a class="link" href="#enrichment" data-scroll>Enrichment</a>
+        <a class="link" href="#projects" data-scroll>Projects</a>
+      </div>
+    </div>
+    <a class="down" href="#about" data-scroll
+      ><i class="icon fa fa-chevron-down" aria-hidden="true"></i
+    ></a>
 
     <!-- Introduction -->
     <section class="intro" id="home">
