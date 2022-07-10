@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "test 2",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dariusKoh/dariuskoh.github.io.git"
@@ -19,5 +17,11 @@
   "homepage": "https://github.com/dariusKoh/dariuskoh.github.io#readme",
   "devDependencies": {
     "tailwindcss": "^3.1.5"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "npm": "^8.13.2",
+    "postcss-cli": "^10.0.0",
+    "tailwind": "^4.0.0"
   }
 }
