@@ -1,295 +1,399 @@
-    <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Darius' Portfolio</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Darius' Portfolio</title>
 
-            <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-            <script src="https://kit.fontawesome.com/d8604f2d9f.js" crossorigin="anonymous"></script>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/d8604f2d9f.js"
+      crossorigin="anonymous"
+    ></script>
 
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&display=swap" rel="stylesheet">    
-            <link rel="stylesheet" href="dist/output.css">
-        </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
 
-        <body>
-            <nav role="navigation" class="flex justify-between items-center h-16 bg-gradient-to-r from-gray-900 to-blue-900 text-white relative">
-                <a href="index.html" class="pl-6 text-6xl">Darius Koh</a>
-                <div class="px-6 cursor-pointer md:hidden" id="bars"><i class="fa-solid fa-bars"></i></div>
-                <div class="hidden md:block" id="menu">
-                    <a href="index.html" class="p-4">Competitions</a>
-                    <a href="index.html" class="p-4">Enrichment</a>
-                    <a href="index.html" class="p-4">Projects</a>
-                </div>
-            </nav>
-            <header>
-                <div class="header bg-gray-700 text-white text-center relative">
-                    <h1>
-                      <span class="site-title text-6xl">Darius Koh</span>
-                    </h1>
+  <body>
+    <nav
+      role="navigation"
+      class="flex justify-between items-center h-16 bg-gradient-to-r from-gray-900 to-blue-900 text-white relative"
+    >
+      <a href="index.html" class="pl-6 text-4xl">Darius Koh</a>
+      <div
+        class="px-6 cursor-pointer md:hidden hover\:bg-clip-border"
+        id="bars"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="hidden md:block" id="menu">
+        <a href="index.html" class="p-4">Competitions</a>
+        <a href="index.html" class="p-4">Enrichment</a>
+        <a href="index.html" class="p-4">Projects</a>
+      </div>
+    </nav>
+    <header>
+      <div class="header bg-gray-700 text-white text-center relative">
+        <h1>
+          <span class="site-title text-6xl">Darius Koh</span>
+        </h1>
+        <div class="header-icons text-6xl">
+          <a
+            aria-label="Send email"
+            href="mailto:darius_koh_kai_keat@s2019.ssts.edu.sg"
+            ><i
+              class="icon fa fa-envelope transform hover:text-black"
+              aria-hidden="true"
+            ></i
+          ></a>
+          <a
+            aria-label="My Github"
+            target="_blank"
+            href="https://github.com/dariusKoh"
+            ><i
+              class="icon fa fa-github transform hover:text-black"
+              aria-hidden="true"
+            ></i
+          ></a>
+        </div>
 
-                    <div class="header-icons text-6xl">
-                      <a aria-label="Send email" href="mailto:darius_koh_kai_keat@s2019.ssts.edu.sg"><i class="icon fa fa-envelope" aria-hidden="true"></i></a>
-                      <a aria-label="My Github" target="_blank" href="https://github.com/dariusKoh"><i class="icon fa fa-github" aria-hidden="true"></i></a>
-                    </div>
+        <div class="header-links">
+          <a class="link" href="#competitions" data-scroll>Competitions</a>
+          <a class="link" href="#enrichment" data-scroll>Enrichment</a>
+          <a class="link" href="#projects" data-scroll>Projects</a>
+        </div>
+      </div>
+      <a class="down" href="#about" data-scroll
+        ><i class="icon fa fa-chevron-down" aria-hidden="true"></i
+      ></a>
+    </header>
 
-                    <div class="header-links">
-                      <a class="link" href="#competitions" data-scroll>Competitions</a>
-                      <a class="link" href="#enrichment" data-scroll>Enrichment</a>
-                      <a class="link" href="#projects" data-scroll>Projects</a>
-                    </div>
-                </div>
-                <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
-            </header>    
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Darius Koh</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Student</p>
+      <img src="" alt="" />
+    </section>
 
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Darius Koh</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">Student</p>
-            <img src="" alt="">
-        </section>
+    <!-- Competitions -->
+    <section class="user-details" id="competitions">
+      <h2 class="section__title">Competitions</h2>
+      <p class="section__subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
 
-        <!-- Competitions -->
-        <section class="user-details" id="competitions">
-            <h2 class="section__title"> Competitions </h2>
-            <p class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <!-- Competition item 01 -->
+      <div class="projects">
+        <!-- Competition item 01 image -->
+        <div class="images">
+          <img alt="" src="" />
+        </div>
+        <!-- Competition item 01 contents -->
+        <div class="contents">
+          <h3>Competition Title</h3>
+          <ul>
+            <li>Competition Detials</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- Competition item 01 link -->
+          <a class="project-link" href="#">Check it out</a>
+        </div>
+      </div>
 
-            <!-- Competition item 01 -->
-            <div class="projects">
-                <!-- Competition item 01 image -->
-                <div class="images">
-                    <img alt="" src=""/>
-                </div>
-                <!-- Competition item 01 contents -->
-                <div class="contents">
-                    <h3> Competition Title </h3>
-                <ul>
-                    <li> Competition Detials </li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <!-- Competition item 01 link -->
-                <a class="project-link" href="#">Check it out</a>
-                </div>
-            </div>
+      <!-- Competition item 02 -->
+      <div class="projects">
+        <!-- Competition item 02 image -->
+        <div class="images">
+          <img alt="" src="" />
+        </div>
+        <!-- Competition item 02 contents -->
+        <div class="contents">
+          <h3>Competition Title</h3>
+          <ul>
+            <li>Competition Detials</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- Competition item 02 link -->
+          <a class="project-link" href="#">Check it out</a>
+        </div>
+      </div>
 
-            <!-- Competition item 02 -->
-            <div class="projects">
-                <!-- Competition item 02 image -->
-                <div class="images">
-                    <img alt="" src=""/>
-                </div>
-                <!-- Competition item 02 contents -->
-                <div class="contents">
-                    <h3> Competition Title </h3>
-                <ul>
-                    <li> Competition Detials </li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <!-- Competition item 02 link -->
-                <a class="project-link" href="#">Check it out</a>
-                </div>
-            </div>
+      <!-- Competition item 03 -->
+      <div class="projects">
+        <!-- Competition item 03 image -->
+        <div class="images">
+          <img alt="" src="" />
+        </div>
+        <!-- Competition item 03 contents -->
+        <div class="contents">
+          <h3>Competition Title</h3>
+          <ul>
+            <li>Competition Detials</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- Competition item 03 link -->
+          <a class="project-link" href="#">Check it out</a>
+        </div>
+      </div>
 
-            <!-- Competition item 03 -->
-            <div class="projects">
-                <!-- Competition item 03 image -->
-                <div class="images">
-                    <img alt="" src=""/>
-                </div>
-                <!-- Competition item 03 contents -->
-                <div class="contents">
-                    <h3> Competition Title </h3>
-                <ul>
-                    <li> Competition Detials </li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <!-- Competition item 03 link -->
-                <a class="project-link" href="#">Check it out</a>
-                </div>
-            </div>
+      <!-- Competition item 04 -->
+      <div class="projects">
+        <!-- Competition item 04 image -->
+        <div class="images">
+          <img alt="" src="" />
+        </div>
+        <!-- Competition item 04 contents -->
+        <div class="contents">
+          <h3>Competition Title</h3>
+          <ul>
+            <li>Competition Detials</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- Competition item 04 link -->
+          <a class="project-link" href="#">Check it out</a>
+        </div>
+      </div>
+    </section>
 
-            <!-- Competition item 04 -->
-            <div class="projects">
-                <!-- Competition item 04 image -->
-                <div class="images">
-                    <img alt="" src=""/>
-                </div>
-                <!-- Competition item 04 contents -->
-                <div class="contents">
-                    <h3> Competition Title </h3>
-                <ul>
-                    <li> Competition Detials </li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <!-- Competition item 04 link -->
-                <a class="project-link" href="#">Check it out</a>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Enrichment -->
-        <section class="user-details" id="enrichment">
-                <h2 class="section__title"> Enrichment </h2>
-                <p class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <!-- Enrichment -->
+    <section class="user-details" id="enrichment">
+      <h2 class="section__title">Enrichment</h2>
+      <p class="section__subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
 
-            <!-- Enrichment item 01 -->
-            <div class="projects">
-                <!-- Enrichment item 01 image -->
-                <div class="images">
-                    <img alt="" src=""/>
-                </div>
-                <!-- Enrichment item 01 contents -->
-                <div class="contents">
-                    <h3> Enrichment Title </h3>
-                <ul>
-                    <li> Enrichment Detials </li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <!-- Enrichment item 01 link -->
-                <a class="project-link" href="#">Check it out</a>
-                </div>
-            </div>
+      <!-- Enrichment item 01 -->
+      <div class="projects">
+        <!-- Enrichment item 01 image -->
+        <div class="images">
+          <img alt="" src="" />
+        </div>
+        <!-- Enrichment item 01 contents -->
+        <div class="contents">
+          <h3>Enrichment Title</h3>
+          <ul>
+            <li>Enrichment Detials</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- Enrichment item 01 link -->
+          <a class="project-link" href="#">Check it out</a>
+        </div>
+      </div>
 
-            <!-- Enrichment item 02 -->
-            <div class="projects">
-                <!-- Enrichment item 02 image -->
-                <div class="images">
-                    <img alt="" src=""/>
-                </div>
-                <!-- Enrichment item 02 contents -->
-                <div class="contents">
-                    <h3> Enrichment Title </h3>
-                <ul>
-                    <li> Enrichment Detials </li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <!-- Enrichment item 02 link -->
-                <a class="project-link" href="#">Check it out</a>
-                </div>
-            </div>
+      <!-- Enrichment item 02 -->
+      <div class="projects">
+        <!-- Enrichment item 02 image -->
+        <div class="images">
+          <img alt="" src="" />
+        </div>
+        <!-- Enrichment item 02 contents -->
+        <div class="contents">
+          <h3>Enrichment Title</h3>
+          <ul>
+            <li>Enrichment Detials</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- Enrichment item 02 link -->
+          <a class="project-link" href="#">Check it out</a>
+        </div>
+      </div>
 
-            <!-- Enrichment item 03 -->
-            <div class="projects">
-                <!-- Enrichment item 03 image -->
-                <div class="images">
-                    <img alt="" src=""/>
-                </div>
-                <!-- Enrichment item 03 contents -->
-                <div class="contents">
-                    <h3> Enrichment Title </h3>
-                <ul>
-                    <li> Enrichment Detials </li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <!-- Enrichment item 03 link -->
-                <a class="project-link" href="#">Check it out</a>
-                </div>
-            </div>
+      <!-- Enrichment item 03 -->
+      <div class="projects">
+        <!-- Enrichment item 03 image -->
+        <div class="images">
+          <img alt="" src="" />
+        </div>
+        <!-- Enrichment item 03 contents -->
+        <div class="contents">
+          <h3>Enrichment Title</h3>
+          <ul>
+            <li>Enrichment Detials</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- Enrichment item 03 link -->
+          <a class="project-link" href="#">Check it out</a>
+        </div>
+      </div>
 
-            <!-- Enrichment item 04 -->
-            <div class="projects">
-                <!-- Enrichment item 04 image -->
-                <div class="images">
-                    <img alt="" src=""/>
-                </div>
-                <!-- Enrichment item 04 contents -->
-                <div class="contents">
-                    <h3> Enrichment Title </h3>
-                <ul>
-                    <li> Enrichment Detials </li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <!-- Enrichment item 04 link -->
-                <a class="project-link" href="#">Check it out</a>
-                </div>
-            </div>
-        </section>
+      <!-- Enrichment item 04 -->
+      <div class="projects">
+        <!-- Enrichment item 04 image -->
+        <div class="images">
+          <img alt="" src="" />
+        </div>
+        <!-- Enrichment item 04 contents -->
+        <div class="contents">
+          <h3>Enrichment Title</h3>
+          <ul>
+            <li>Enrichment Detials</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- Enrichment item 04 link -->
+          <a class="project-link" href="#">Check it out</a>
+        </div>
+      </div>
+    </section>
 
-        <!-- Projects -->
-        <section class="user-details" id="projects">
-            <h2 class="section__title"> My Projects </h2>
-            <p class="section__subtitle"></p>
+    <!-- Projects -->
+    <section class="user-details" id="projects">
+      <h2 class="section__title">My Projects</h2>
+      <p class="section__subtitle"></p>
 
-            <!-- project item 01 -->
-            <div class="projects">
-                <!-- project item 01 image -->
-                <div class="images">
-                    <img alt="MacRitchieTrails" src="img/MacRitchieTrails.webp"/>
-                </div>
-                <!-- project item 01 contents -->
-                <div class="contents">
-                    <h3> Project Title </h3>
-                <ul>
-                    <li> Project Detials </li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <!-- project item 01 link -->
-                <a class="project-link" href="#">Check it out</a>
-                </div>
-            </div>
+      <!-- project item 01 -->
+      <div class="projects">
+        <!-- project item 01 image -->
+        <div class="images">
+          <img alt="MacRitchieTrails" src="img/MacRitchieTrails.webp" />
+        </div>
+        <!-- project item 01 contents -->
+        <div class="contents">
+          <h3>Project Title</h3>
+          <ul>
+            <li>Project Detials</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- project item 01 link -->
+          <a class="project-link" href="#">Check it out</a>
+        </div>
+      </div>
 
-            <!-- project item 02 -->
-            <div class="projects">
-                <!-- project item 02 image -->
-                <div class="images">
-                <img alt="AGC1" src="img/agc1.jpeg"/>
-                </div>
-                <!-- project item 01 contents -->
-                <div class="contents">
-                <h3> Project Title </h3>
-                <ul>
-                    <li> Project Details </li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <!-- project item 01 link -->
-                <a class="project-link" href="#">Check it out</a>
-                </div>
-            </div>
+      <!-- project item 02 -->
+      <div class="projects">
+        <!-- project item 02 image -->
+        <div class="images">
+          <img alt="AGC1" src="img/agc1.jpeg" />
+        </div>
+        <!-- project item 01 contents -->
+        <div class="contents">
+          <h3>Project Title</h3>
+          <ul>
+            <li>Project Details</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- project item 01 link -->
+          <a class="project-link" href="#">Check it out</a>
+        </div>
+      </div>
 
-            <!-- project item 03 -->
-            <div class="projects">
-                <!-- project item 02 image -->
-                <div class="images">
-                <img alt="AGC1" src="img/agc1.jpeg"/>
-                </div>
-                <!-- project item 01 contents -->
-                <div class="contents">
-                <h3> Project Title </h3>
-                <ul>
-                    <li> Project Details </li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <!-- project item 01 link -->
-                <a class="project-link" href="#">Check it out</a>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Footer -->
-        <footer>
-            <!-- list of socials -->
-            <!-- email address -->
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="mailto:darius_koh_kai_keat@s2019.ssts.edu.sg">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                </li>
-            </ul>
-            <!-- Github -->
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/dariusKoh">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
-            <script src="app.js"></script>
-        </body>
-    </html>
+      <!-- project item 03 -->
+      <div class="projects">
+        <!-- project item 02 image -->
+        <div class="images">
+          <img alt="AGC1" src="img/agc1.jpeg" />
+        </div>
+        <!-- project item 01 contents -->
+        <div class="contents">
+          <h3>Project Title</h3>
+          <ul>
+            <li>Project Details</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <!-- project item 01 link -->
+          <a class="project-link" href="#">Check it out</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <!-- list of socials -->
+      <!-- email address -->
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="mailto:darius_koh_kai_keat@s2019.ssts.edu.sg"
+          >
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+      <!-- Github -->
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/dariusKoh">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
