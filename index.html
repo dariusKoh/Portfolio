@@ -23,12 +23,12 @@
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
 
-  <body class="text-white pb-12">
+  <body class="bg-headc text-white pb-12">
     <!-- Header -->
     <header class="sticky top-0 z-50 justify-between items-center mx-auto w-full">
       <nav
       role="navigation"
-      class="flex justify-between items-center h-20 bg-grad1 text-white relative"
+      class="flex justify-between items-center h-20 bg-headc text-white relative"
     >
       <!-- Logo (my name) -->
       <a href="index.html" class="pl-6 text-2xl text-gray-400 flex font-bold">Darius Koh</a>
@@ -50,7 +50,7 @@
 
     <div>
       <!-- Introduction -->
-      <section class="md:grid md:grid-flow-col md:gap-5 w-full bg-grad1 h-screen md:py-44">
+      <section class="md:grid md:grid-flow-col md:gap-5 w-full bg-body h-screen md:py-44">
         <!-- Title + Icons -->
         <div class="order-1 md:col-span-15 pt-28">
           <!-- Title & Subtitle -->
@@ -97,100 +97,25 @@
 
     <!-- Competitions -->
     <div>
-      <section id="competitions" class="h-screen w-full">
+      <section id="competitions" class="bg-bodyc h-screen w-full">
         <div class="text-6xl text-center py-5">
           <h2 class="secondary-title"> Competitions </h2>
               <!-- Horizontal Line -->
           <h2  class="hline"> </h2>
         </div>
-
-          <body class="p-10 bg-body text=body">
-            <div class="relative w-[400px] overflox-hidden">
-              <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer">
-              <div class="bg-selectedtext h-12 w-full pl-5 flex items-center">
-                <h1 class="bg-body text-white">
-                  What is dn
-                </h1>
-              </div>
-                
-              <div class="absolute top-3 right-3 text-white transition-transform duration-500 rotate-0 peer">
-                <i class="fa-solid fa-angle-down"></i>
-              </div>
-              <div class="bg-body overflow-hidden transition-all duration-500">
-                <div class="p-4">
-                  <p>
-                    deez nut
-                  </p>
-                </div>
-                
-              </div> 
-            </div>
-          </body>
-
-                    <!-- This example requires Tailwind CSS v2.0+ -->
-          <div class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-            <!--
-              Background backdrop, show/hide based on modal state.
-
-              Entering: "ease-out duration-300"
-                From: "opacity-0"
-                To: "opacity-100"
-              Leaving: "ease-in duration-200"
-                From: "opacity-100"
-                To: "opacity-0"
-            -->
-            <div class="fixed inset-0 bg-body bg-opacity-75 transition-opacity"></div>
-
-            <div class="fixed z-10 inset-0 overflow-y-auto">
-              <div class="flex items-end sm:items-center justify-center min-h-full p-4 text-center sm:p-0">
-                <!--
-                  Modal panel, show/hide based on modal state.
-
-                  Entering: "ease-out duration-300"
-                    From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                    To: "opacity-100 translate-y-0 sm:scale-100"
-                  Leaving: "ease-in duration-200"
-                    From: "opacity-100 translate-y-0 sm:scale-100"
-                    To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                -->
-                <div class="relative bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-lg sm:w-full">
-                  <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                    <div class="sm:flex sm:items-start">
-                      <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
-                        <!-- Heroicon name: outline/exclamation -->
-                        <svg class="h-6 w-6 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                        </svg>
-                      </div>
-                      <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                        <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">Deactivate account</h3>
-                        <div class="mt-2">
-                          <p class="text-sm text-gray-500">Are you sure you want to deactivate your account? All of your data will be permanently removed. This action cannot be undone.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                    <button type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">Deactivate</button>
-                    <button type="button" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">Cancel</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        
         
       </section>
     </div>
 
 
     <!-- Enrichment -->
-    <!-- Horizontal Line -->
-    <h2 id="enrichment" class="hline"> </h2>
+    
     <div>
-      <section class="bg-grad3 h-screen w-full">
+      <section id="enrichment" class="bg-bodyc h-screen w-full">
         <div class="text-6xl text-center py-5">
           <h2 class="secondary-title"> Enrichment </h2>
+          <!-- Horizontal Line -->
+          <h2 class="hline"> </h2>
         </div>
         
         <div class="px-5">
@@ -200,12 +125,12 @@
     </div>
 
     <!-- Projects -->
-    <!-- Horizontal Line -->
-    <h2 id="projects" class="hline"> </h2>
     <div>
-      <section class="bg-grad4 h-screen w-full">
+      <section id="projects" class="bg-bodyc h-screen w-full">
         <div class="text-6xl text-center py-5">
           <h2 class="secondary-title"> Projects </h2>
+          <!-- Horizontal Line -->
+          <h2  class="hline"> </h2>
         </div>
         
         <div class="px-5">
@@ -214,32 +139,6 @@
       </section>
     </div>
 
-
-
-    <!-- Footer -->
-    <footer class="bg-grad1 fixed inset-x-0 bottom-0 h-5">
-      <!-- list of socials -->
-      <div class="header-icons text-5xl text-center pb-5 space-x-5 content-center">
-        <a
-          aria-label="Send email"
-          href="mailto:darius_koh_kai_keat@s2019.ssts.edu.sg"
-          ><i
-            class="icon fa fa-envelope transform hover:text-gray-500"
-            aria-hidden="true"
-          ></i
-        ></a>
-        <a
-          aria-label="My Github"
-          target="_blank"
-          href="https://github.com/dariusKoh"
-          ><i
-            class="icon fa fa-github transform hover:text-gray-500 pl-5"
-            aria-hidden="true"
-          ></i
-        ></a>
-      </div>
-
-    </footer>
     <script src="app.js"></script>
   </body>
 </html>

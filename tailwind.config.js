@@ -12,12 +12,8 @@ module.exports = {
   
       //Setup of the Colours
       colors: {
-        grad1: '#101010',
-        grad2: '#141416',
-        grad3: '#19191C',
-        grad4: '#1D1D23',
-        ends: '#101010',
-        body: '#141416',
+        headc: '#101010',
+        bodyc: '#141416',
         selectedtext: '#A3A3FF',
         sitetheme: '#3F3FFF',
         nav: '#404053',
