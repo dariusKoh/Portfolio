@@ -24,61 +24,88 @@
   </head>
 
   <body class="bg-body text-white pb-12">
-  
+    <!-- Header -->
     <header class="sticky top-0 z-50 justify-between items-center mx-auto w-full">
       <nav
       role="navigation"
-      class="flex justify-between items-center h-20 bg-black text-white relative"
+      class="flex justify-between items-center h-20 bg-ends text-white relative"
     >
+      <!-- Logo (my name) -->
       <a href="index.html" class="pl-6 text-2xl text-gray-400 flex font-bold">Darius Koh</a>
+      <!-- Menu Bar (fake) -->
       <div
         class="px-12 cursor-pointer md:hidden hover:bg-clip-border"
         id="bars"
       >
         <i class="fa-solid fa-bars"></i>
       </div>
+      <!-- Menu Bar Items -->
       <div class="hidden md:block items-center space-x-5 px-6" id="menu">
-        <a href="#Comp" class="p-4">Competitions</a>
-        <a href="#Enrich" class="p-4">Enrichment</a>
-        <a href="#Proj" class="p-4">Projects</a>
+        <a href="#competitions" class="p-4">Competitions</a>
+        <a href="#enrichment" class="p-4">Enrichment</a>
+        <a href="#projects" class="p-4">Projects</a>
       </div>
     </nav>
     </header>
 
     <div>
-      <section class="grid grid-rows-3 md:grid-cols-2 md:gap-6 gap-y-0 w-full bg-black h-screen md:py-48 py-48">
-        <div class="order-1">
-          <h1 class="whitespace-nowrap font-bold text-7xl text-center md:text-left md:pl-10">Darius Koh</h1>
-          <h2 class="text-3xl text-center md:text-left md:pl-12 pt-1">Student</h2>
+      <!-- Introduction -->
+      <section class="md:grid md:grid-flow-col md:gap-5 w-full bg-ends h-screen md:py-44">
+        <!-- Title + Icons -->
+        <div class="order-1 md:col-span-15 pt-28">
+          <!-- Title & Subtitle -->
+          <div>
+            <!-- Title (my name) -->
+            <h1 class="whitespace-nowrap font-bold text-7xl text-center md:text-left md:px-10">Darius Koh</h1>
+            <!-- Subtitle -->
+            <h2 class="text-3xl text-center md:text-left md:pl-12 pt-1">Student</h2>
+          </div>
+          <!-- Social Icons -->
+          <div class="header-icons text-5xl text-center md:text-left pt-5 space-x-5 md:pl-36">
+            <!-- Mail -->
+            <a
+              aria-label="Send email"
+              href="mailto:darius_koh_kai_keat@s2019.ssts.edu.sg"
+              ><i
+                class="icon fa fa-envelope transform hover:text-gray-500"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <!-- Github -->
+            <a
+              aria-label="My Github"
+              target="_blank"
+              href="https://github.com/dariusKoh"
+              ><i
+                class="icon fa fa-github transform hover:text-gray-500 pl-10"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </div>
         </div>
-        
-        <div class="order-2 md:order-3 header-icons text-5xl text-center md:text-left pt-5 space-x-5 md:pl-36">
-          <a
-            aria-label="Send email"
-            href="mailto:darius_koh_kai_keat@s2019.ssts.edu.sg"
-            ><i
-              class="icon fa fa-envelope transform hover:text-gray-500"
-              aria-hidden="true"
-            ></i
-          ></a>
-          <a
-            aria-label="My Github"
-            target="_blank"
-            href="https://github.com/dariusKoh"
-            ><i
-              class="icon fa fa-github transform hover:text-gray-500 pl-5"
-              aria-hidden="true"
-            ></i
-          ></a>
-        </div>
-
-        <div class="order-3 md:order-2 text-center md:text-left px-10">
+        <!-- Border Line -->
+        <h2 class="order-2 fline py-5 md:pt-32 md:px-15"></h2>
+        <!-- Introduction -->
+        <div class="order-3 text-center md:text-left px-10 md:col-span-5 align-middle md:m-auto">
           <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida.</h1>
-        </div> 
+        </div>
 
+      </section>
+    </div>
 
+    <!-- Horizontal Line -->
+    <h2 id="competitions" class="hline"> </h2>
+
+    <!-- Competitions -->
+    <div>
+      <section class="bg-body h-screen w-full">
+        <div class="text-6xl text-center py-5">
+          <h2 class="secondary-title"> Competitions </h2>
+        </div>
         
-        
+        <div class="px-5">
+          <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida.</h1>
+        </div>
       </section>
     </div>
 
@@ -86,27 +113,28 @@
 
 
     <!-- Footer -->
-    <footer class="text-6xl text-center">
+    <footer class="bg-ends fixed inset-x-0 bottom-0 h-5">
       <!-- list of socials -->
-      <!-- email address -->
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a
-            class="social-list__link"
-            href="mailto:darius_koh_kai_keat@s2019.ssts.edu.sg"
-          >
-            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-          </a>
-        </li>
-      </ul>
-      <!-- Github -->
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://github.com/dariusKoh">
-            <i class="fa-brands fa-github" aria-hidden="true"></i>
-          </a>
-        </li>
-      </ul>
+      <div class="header-icons text-5xl text-center pb-5 space-x-5 content-center">
+        <a
+          aria-label="Send email"
+          href="mailto:darius_koh_kai_keat@s2019.ssts.edu.sg"
+          ><i
+            class="icon fa fa-envelope transform hover:text-gray-500"
+            aria-hidden="true"
+          ></i
+        ></a>
+        <a
+          aria-label="My Github"
+          target="_blank"
+          href="https://github.com/dariusKoh"
+          ><i
+            class="icon fa fa-github transform hover:text-gray-500 pl-5"
+            aria-hidden="true"
+          ></i
+        ></a>
+      </div>
+
     </footer>
     <script src="app.js"></script>
   </body>

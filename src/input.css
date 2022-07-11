@@ -5,3 +5,24 @@
 html, body {
     scroll-behaviour: smooth;
 }
+
+.hline::before {
+    content: "";
+    @apply block w-96 h-1 bg-input rounded-full my-2 mx-auto;
+}
+
+.vline::before {
+    content: "";
+    @apply block w-1 h-36 bg-input rounded-full my-2 mx-auto;
+}
+
+.fline::before {
+    content: "";
+    @apply block w-52 h-1 md:w-1 md:h-36 bg-input rounded-full my-2 mx-auto;
+}
+
+
+
+[id] {
+    scroll-margin-top: 100px;
+    }
