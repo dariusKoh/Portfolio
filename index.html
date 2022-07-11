@@ -21,15 +21,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./dist/output.css" />
+    <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
   </head>
 
-  <body class="bg-headc text-white pb-12">
+  <body class="text-white pb-12">
     <!-- Header -->
     <header class="sticky top-0 z-50 justify-between items-center mx-auto w-full">
-      <nav
-      role="navigation"
-      class="flex justify-between items-center h-20 bg-headc text-white relative"
-    >
+      <nav role="navigation" class="flex justify-between items-center h-20 bg-headc text-white relative">
       <!-- Logo (my name) -->
       <a href="index.html" class="pl-6 text-2xl text-gray-400 flex font-bold font-poppins">Darius Koh</a>
       <!-- Menu Bar (fake) -->
@@ -48,7 +46,7 @@
     </nav>
     </header>
 
-    <div>
+    <div class="bg-headc">
       <!-- Introduction -->
       <section class="md:grid md:grid-flow-col md:gap-5 w-full bg-body h-screen md:py-44">
         <!-- Title + Icons -->
@@ -86,7 +84,7 @@
         <!-- Border Line -->
         <h2 class="order-2 fline py-5 md:pt-32 md:px-15"></h2>
         <!-- Introduction -->
-        <div class="order-3 text-center md:text-left px-10 md:col-span-5 align-middle md:m-auto truncate">
+        <div class="order-3 text-center md:text-left px-10 md:col-span-5 align-middle md:m-auto">
           <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida.</h1>
         </div>
 
@@ -97,51 +95,642 @@
 
     <!-- Competitions -->
     <div>
-      <section id="competitions" class="bg-bodyc h-screen w-full">
+      <section id="competitions" class="bg-bodyc h-fill w-full">
+        <!-- Header -->
         <div class="text-6xl text-center py-5">
           <h2 class="secondary-title"> Competitions </h2>
               <!-- Horizontal Line -->
           <h2  class="hline"> </h2>
         </div>
-
+        <!-- Brief Description of competitions-->
         <div class="px-5">
           <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida.</h1>
         </div>
+
+        <!-- Competition List -->
+        <div class="container mt-5 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+          <section class="w-full">
+            
+            <!-- Compeition Box 1 -->
+            <button class="space-y-8 my-8" id="comp1">
+              <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
+                
+                <!-- logo -->
+                <div class="mb-6 lg:mb-0">
+                  <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
+
+                </div>
+
+                <!-- info -->
+                <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                  <h3 class="text-white text-3xl font-semibold">name</h3>
+
+                  <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+              </button>
+
+                  <!-- Overlay element for modal -->
+                  <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
+
+                  <!-- The modal -->
+                  <div id="modalc1"
+                      class="hidden fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg bg-nav">
+                      <h1 class="text-2xl font-semibold">Modem Title</h1>
+                      <div class="py-5 border-t border-b border-gray-300">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                      </div>
+                      <div class="flex justify-end">
+                          <!-- This button is used to close the dialog -->
+                          <button id="close1" class="px-5 py-2 bg-indigo-500 hover:bg-indigo-600 text-white cursor-pointer rounded-md">
+                              Close</button>
+                      </div>
+                  </div>
+            <!-- Compeition Box 2 -->
+            <button class="space-y-8 my-8" id="comp2">
+              <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
+                
+                <!-- logo -->
+                <div class="mb-6 lg:mb-0">
+                  <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
+
+                </div>
+
+                <!-- info -->
+                <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                  <h3 class="text-white text-3xl font-semibold">name</h3>
+
+                  <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+              </button>
+
+                  <!-- Overlay element for modal -->
+                  <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
+
+                  <!-- The modal -->
+                  <div id="modalc2"
+                      class="hidden fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg bg-nav">
+                      <h1 class="text-2xl font-semibold">Modem Title</h1>
+                      <div class="py-5 border-t border-b border-gray-300">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                      </div>
+                      <div class="flex justify-end">
+                          <!-- This button is used to close the dialog -->
+                          <button id="close2" class="px-5 py-2 bg-indigo-500 hover:bg-indigo-600 text-white cursor-pointer rounded-md">
+                              Close</button>
+                      </div>
+                  </div>
+            <!-- Compeition Box 3 -->
+            <button class="space-y-8 my-8" id="comp3">
+              <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
+                
+                <!-- logo -->
+                <div class="mb-6 lg:mb-0">
+                  <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
+
+                </div>
+
+                <!-- info -->
+                <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                  <h3 class="text-white text-3xl font-semibold">name</h3>
+
+                  <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+              </button>
+
+                  <!-- Overlay element for modal -->
+                  <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
+
+                  <!-- The modal -->
+                  <div id="modalc3"
+                      class="hidden fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg bg-nav">
+                      <h1 class="text-2xl font-semibold">Modem Title</h1>
+                      <div class="py-5 border-t border-b border-gray-300">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                      </div>
+                      <div class="flex justify-end">
+                          <!-- This button is used to close the dialog -->
+                          <button id="close3" class="px-5 py-2 bg-indigo-500 hover:bg-indigo-600 text-white cursor-pointer rounded-md">
+                              Close</button>
+                      </div>
+                  </div>
+            <!-- Compeition Box 4 -->
+            <button class="space-y-8 my-8" id="comp4">
+              <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
+                
+                <!-- logo -->
+                <div class="mb-6 lg:mb-0">
+                  <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
+
+                </div>
+
+                <!-- info -->
+                <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                  <h3 class="text-white text-3xl font-semibold">name</h3>
+
+                  <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+              </button>
+
+                  <!-- Overlay element for modal -->
+                  <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
+
+                  <!-- The modal -->
+                  <div id="modalc4"
+                      class="hidden fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg bg-nav">
+                      <h1 class="text-2xl font-semibold">Modem Title</h1>
+                      <div class="py-5 border-t border-b border-gray-300">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                      </div>
+                      <div class="flex justify-end">
+                          <!-- This button is used to close the dialog -->
+                          <button id="close4" class="px-5 py-2 bg-indigo-500 hover:bg-indigo-600 text-white cursor-pointer rounded-md">
+                              Close</button>
+                      </div>
+                  </div>
+
+          <!-- Running the modals -->
+          <script>
+              var openButton = document.getElementById('comp1');
+              var dialog = document.getElementById('modalc1');
+              var closeButton = document.getElementById('close1');
+              var overlay = document.getElementById('overlay');
+
+              // show the overlay and the dialog
+              openButton.addEventListener('click', function () {
+                  dialog.classList.remove('hidden');
+                  overlay.classList.remove('hidden');
+              });
+
+              // hide the overlay and the dialog
+              closeButton.addEventListener('click', function () {
+                  dialog.classList.add('hidden');
+                  overlay.classList.add('hidden');
+              });
+          </script>
+              <script>
+              var openButton = document.getElementById('comp2');
+              var dialog = document.getElementById('modalc2');
+              var closeButton = document.getElementById('close2');
+              var overlay = document.getElementById('overlay');
+
+              // show the overlay and the dialog
+              openButton.addEventListener('click', function () {
+                  dialog.classList.remove('hidden');
+                  overlay.classList.remove('hidden');
+              });
+
+              // hide the overlay and the dialog
+              closeButton.addEventListener('click', function () {
+                  dialog.classList.add('hidden');
+                  overlay.classList.add('hidden');
+              });
+          </script>
+          </script>
+              <script>
+              var openButton = document.getElementById('comp3');
+              var dialog = document.getElementById('modalc3');
+              var closeButton = document.getElementById('close3');
+              var overlay = document.getElementById('overlay');
+
+              // show the overlay and the dialog
+              openButton.addEventListener('click', function () {
+                  dialog.classList.remove('hidden');
+                  overlay.classList.remove('hidden');
+              });
+
+              // hide the overlay and the dialog
+              closeButton.addEventListener('click', function () {
+                  dialog.classList.add('hidden');
+                  overlay.classList.add('hidden');
+              });
+          </script>
+          </script>
+              <script>
+              var openButton = document.getElementById('comp4');
+              var dialog = document.getElementById('modalc4');
+              var closeButton = document.getElementById('close4');
+              var overlay = document.getElementById('overlay');
+
+              // show the overlay and the dialog
+              openButton.addEventListener('click', function () {
+                  dialog.classList.remove('hidden');
+                  overlay.classList.remove('hidden');
+              });
+
+              // hide the overlay and the dialog
+              closeButton.addEventListener('click', function () {
+                  dialog.classList.add('hidden');
+                  overlay.classList.add('hidden');
+              });
+          </script>
       </section>
     </div>
 
 
-    <!-- Enrichment -->
-    
-    <div>
-      <section id="enrichment" class="bg-bodyc h-screen w-full">
-        <div class="text-6xl text-center py-5">
-          <h2 class="secondary-title"> Enrichment </h2>
-          <!-- Horizontal Line -->
-          <h2 class="hline"> </h2>
+        <!-- Enrichment -->
+        <div>
+          <section id="enrichment" class="bg-bodyc h-full w-full">
+            <!-- Header -->
+            <div class="text-6xl text-center py-5">
+              <h2 class="secondary-title"> Enrichment </h2>
+                  <!-- Horizontal Line -->
+              <h2  class="hline"> </h2>
+            </div>
+            <!-- Brief Description of Enrichments -->
+            <div class="px-5">
+              <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida.</h1>
+            </div>
+
+            <!-- Enrichment List -->
+            <div class="container mt-5 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+              <section class="w-full">
+                
+                <!-- Enrichment Box 1 -->
+                <button class="space-y-8 my-8" id="enr1">
+                  <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
+                    
+                    <!-- logo -->
+                    <div class="mb-6 lg:mb-0">
+                      <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
+
+                    </div>
+
+                    <!-- info -->
+                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                      <h3 class="text-white text-3xl font-semibold">name</h3>
+
+                      <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                  </button>
+
+                      <!-- Overlay element for modal -->
+                      <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
+
+                      <!-- The modal -->
+                      <div id="modale1"
+                          class="hidden fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg bg-nav">
+                          <h1 class="text-2xl font-semibold">Modem Title</h1>
+                          <div class="py-5 border-t border-b border-gray-300">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                          </div>
+                          <div class="flex justify-end">
+                              <!-- This button is used to close the dialog -->
+                              <button id="eclose1" class="px-5 py-2 bg-indigo-500 hover:bg-indigo-600 text-white cursor-pointer rounded-md">
+                                  Close</button>
+                          </div>
+                      </div>
+                <!-- Enrichment Box 2 -->
+                <button class="space-y-8 my-8" id="enr2">
+                  <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
+                    
+                    <!-- logo -->
+                    <div class="mb-6 lg:mb-0">
+                      <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
+
+                    </div>
+
+                    <!-- info -->
+                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                      <h3 class="text-white text-3xl font-semibold">name</h3>
+
+                      <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                  </button>
+
+                      <!-- Overlay element for modal -->
+                      <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
+
+                      <!-- The modal -->
+                      <div id="modale2"
+                          class="hidden fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg bg-nav">
+                          <h1 class="text-2xl font-semibold">Modem Title</h1>
+                          <div class="py-5 border-t border-b border-gray-300">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                          </div>
+                          <div class="flex justify-end">
+                              <!-- This button is used to close the dialog -->
+                              <button id="eclose2" class="px-5 py-2 bg-indigo-500 hover:bg-indigo-600 text-white cursor-pointer rounded-md">
+                                  Close</button>
+                          </div>
+                      </div>
+                <!-- Enrichment Box 3 -->
+                <button class="space-y-8 my-8" id="enr3">
+                  <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
+                    
+                    <!-- logo -->
+                    <div class="mb-6 lg:mb-0">
+                      <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
+
+                    </div>
+
+                    <!-- info -->
+                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                      <h3 class="text-white text-3xl font-semibold">name</h3>
+
+                      <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                  </button>
+
+                      <!-- Overlay element for modal -->
+                      <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
+
+                      <!-- The modal -->
+                      <div id="modale3"
+                          class="hidden fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg bg-nav">
+                          <h1 class="text-2xl font-semibold">Modem Title</h1>
+                          <div class="py-5 border-t border-b border-gray-300">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                          </div>
+                          <div class="flex justify-end">
+                              <!-- This button is used to close the dialog -->
+                              <button id="eclose3" class="px-5 py-2 bg-indigo-500 hover:bg-indigo-600 text-white cursor-pointer rounded-md">
+                                  Close</button>
+                          </div>
+                      </div>
+                <!-- Enrichment Box 4 -->
+                <button class="space-y-8 my-8" id="enr4">
+                  <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
+                    
+                    <!-- logo -->
+                    <div class="mb-6 lg:mb-0">
+                      <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
+
+                    </div>
+
+                    <!-- info -->
+                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                      <h3 class="text-white text-3xl font-semibold">name</h3>
+
+                      <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                  </button>
+
+                      <!-- Overlay element for modal -->
+                      <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
+
+                      <!-- The modal -->
+                      <div id="modale4"
+                          class="hidden fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg bg-nav">
+                          <h1 class="text-2xl font-semibold">Modem Title</h1>
+                          <div class="py-5 border-t border-b border-gray-300">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                          </div>
+                          <div class="flex justify-end">
+                              <!-- This button is used to close the dialog -->
+                              <button id="eclose4" class="px-5 py-2 bg-indigo-500 hover:bg-indigo-600 text-white cursor-pointer rounded-md">
+                                  Close</button>
+                          </div>
+                      </div>
+
+              <!-- Running the Enrichment modals -->
+              <script>
+                  var openButton = document.getElementById('enr1');
+                  var dialog = document.getElementById('modale1');
+                  var closeButton = document.getElementById('eclose1');
+                  var overlay = document.getElementById('overlay');
+
+                  // show the overlay and the dialog
+                  openButton.addEventListener('click', function () {
+                      dialog.classList.remove('hidden');
+                      overlay.classList.remove('hidden');
+                  });
+
+                  // hide the overlay and the dialog
+                  closeButton.addEventListener('click', function () {
+                      dialog.classList.add('hidden');
+                      overlay.classList.add('hidden');
+                  });
+              </script>
+                  <script>
+                  var openButton = document.getElementById('enr2');
+                  var dialog = document.getElementById('modale2');
+                  var closeButton = document.getElementById('eclose2');
+                  var overlay = document.getElementById('overlay');
+
+                  // show the overlay and the dialog
+                  openButton.addEventListener('click', function () {
+                      dialog.classList.remove('hidden');
+                      overlay.classList.remove('hidden');
+                  });
+
+                  // hide the overlay and the dialog
+                  closeButton.addEventListener('click', function () {
+                      dialog.classList.add('hidden');
+                      overlay.classList.add('hidden');
+                  });
+              </script>
+              </script>
+                  <script>
+                  var openButton = document.getElementById('enr3');
+                  var dialog = document.getElementById('modale3');
+                  var closeButton = document.getElementById('eclose3');
+                  var overlay = document.getElementById('overlay');
+
+                  // show the overlay and the dialog
+                  openButton.addEventListener('click', function () {
+                      dialog.classList.remove('hidden');
+                      overlay.classList.remove('hidden');
+                  });
+
+                  // hide the overlay and the dialog
+                  closeButton.addEventListener('click', function () {
+                      dialog.classList.add('hidden');
+                      overlay.classList.add('hidden');
+                  });
+              </script>
+              </script>
+                  <script>
+                  var openButton = document.getElementById('enr4');
+                  var dialog = document.getElementById('modale4');
+                  var closeButton = document.getElementById('eclose4');
+                  var overlay = document.getElementById('overlay');
+
+                  // show the overlay and the dialog
+                  openButton.addEventListener('click', function () {
+                      dialog.classList.remove('hidden');
+                      overlay.classList.remove('hidden');
+                  });
+
+                  // hide the overlay and the dialog
+                  closeButton.addEventListener('click', function () {
+                      dialog.classList.add('hidden');
+                      overlay.classList.add('hidden');
+                  });
+              </script>
+          </section>
         </div>
-        
-        <div class="px-5">
-          <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida.</h1>
-        </div>
-      </section>
-    </div>
 
     <!-- Projects -->
-    <div>
-      <section id="projects" class="bg-bodyc h-screen w-full">
-        <div class="text-6xl text-center py-5">
-          <h2 class="secondary-title"> Projects </h2>
-          <!-- Horizontal Line -->
-          <h2  class="hline"> </h2>
+        <div>
+          <section id="projects" class="bg-bodyc h-full w-full">
+            <!-- Header -->
+            <div class="text-6xl text-center py-5">
+              <h2 class="secondary-title"> Projects </h2>
+                  <!-- Horizontal Line -->
+              <h2  class="hline"> </h2>
+            </div>
+            <!-- Brief Description of Projects -->
+            <div class="px-5">
+              <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida.</h1>
+            </div>
+
+            <!-- Projects List -->
+            <div class="container mt-5 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+              <section class="w-full">
+                
+                <!-- Projects Box 1 -->
+                <button class="space-y-8 my-8" id="pr1">
+                  <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
+                    
+                    <!-- logo -->
+                    <div class="mb-6 lg:mb-0">
+                      <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
+
+                    </div>
+
+                    <!-- info -->
+                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                      <h3 class="text-white text-3xl font-semibold">name</h3>
+
+                      <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                  </button>
+
+                      <!-- Overlay element for modal -->
+                      <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
+
+                      <!-- The modal -->
+                      <div id="modalp1"
+                          class="hidden fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg bg-nav">
+                          <h1 class="text-2xl font-semibold">Modem Title</h1>
+                          <div class="py-5 border-t border-b border-gray-300">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                          </div>
+                          <div class="flex justify-end">
+                              <!-- This button is used to close the dialog -->
+                              <button id="pclose1" class="px-5 py-2 bg-indigo-500 hover:bg-indigo-600 text-white cursor-pointer rounded-md">
+                                  Close</button>
+                          </div>
+                      </div>
+                <!-- Projects Box 2 -->
+                <button class="space-y-8 my-8" id="pr2">
+                  <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
+                    
+                    <!-- logo -->
+                    <div class="mb-6 lg:mb-0">
+                      <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
+
+                    </div>
+
+                    <!-- info -->
+                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                      <h3 class="text-white text-3xl font-semibold">name</h3>
+
+                      <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                  </button>
+
+                      <!-- Overlay element for modal -->
+                      <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
+
+                      <!-- The modal -->
+                      <div id="modalp2"
+                          class="hidden fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg bg-nav">
+                          <h1 class="text-2xl font-semibold">Modem Title</h1>
+                          <div class="py-5 border-t border-b border-gray-300">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                          </div>
+                          <div class="flex justify-end">
+                              <!-- This button is used to close the dialog -->
+                              <button id="pclose2" class="px-5 py-2 bg-indigo-500 hover:bg-indigo-600 text-white cursor-pointer rounded-md">
+                                  Close</button>
+                          </div>
+                      </div>
+                <!-- Projects Box 3 -->
+                <button class="space-y-8 my-8" id="pr3">
+                  <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
+                    
+                    <!-- logo -->
+                    <div class="mb-6 lg:mb-0">
+                      <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
+
+                    </div>
+
+                    <!-- info -->
+                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                      <h3 class="text-white text-3xl font-semibold">name</h3>
+
+                      <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                  </button>
+
+                      <!-- Overlay element for modal -->
+                      <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
+
+                      <!-- The modal -->
+                      <div id="modalp3"
+                          class="hidden fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg bg-nav">
+                          <h1 class="text-2xl font-semibold">Modem Title</h1>
+                          <div class="py-5 border-t border-b border-gray-300">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                          </div>
+                          <div class="flex justify-end">
+                              <!-- This button is used to close the dialog -->
+                              <button id="pclose3" class="px-5 py-2 bg-indigo-500 hover:bg-indigo-600 text-white cursor-pointer rounded-md">
+                                  Close</button>
+                          </div>
+                      </div>
+
+              <!-- Running the Projects modals -->
+              <script>
+                  var openButton = document.getElementById('pr1');
+                  var dialog = document.getElementById('modalp1');
+                  var closeButton = document.getElementById('pclose1');
+                  var overlay = document.getElementById('overlay');
+
+                  // show the overlay and the dialog
+                  openButton.addEventListener('click', function () {
+                      dialog.classList.remove('hidden');
+                      overlay.classList.remove('hidden');
+                  });
+
+                  // hide the overlay and the dialog
+                  closeButton.addEventListener('click', function () {
+                      dialog.classList.add('hidden');
+                      overlay.classList.add('hidden');
+                  });
+              </script>
+                  <script>
+                  var openButton = document.getElementById('pr2');
+                  var dialog = document.getElementById('modalp2');
+                  var closeButton = document.getElementById('pclose2');
+                  var overlay = document.getElementById('overlay');
+
+                  // show the overlay and the dialog
+                  openButton.addEventListener('click', function () {
+                      dialog.classList.remove('hidden');
+                      overlay.classList.remove('hidden');
+                  });
+
+                  // hide the overlay and the dialog
+                  closeButton.addEventListener('click', function () {
+                      dialog.classList.add('hidden');
+                      overlay.classList.add('hidden');
+                  });
+              </script>
+              </script>
+                  <script>
+                  var openButton = document.getElementById('pr3');
+                  var dialog = document.getElementById('modalp3');
+                  var closeButton = document.getElementById('pclose3');
+                  var overlay = document.getElementById('overlay');
+
+                  // show the overlay and the dialog
+                  openButton.addEventListener('click', function () {
+                      dialog.classList.remove('hidden');
+                      overlay.classList.remove('hidden');
+                  });
+
+                  // hide the overlay and the dialog
+                  closeButton.addEventListener('click', function () {
+                      dialog.classList.add('hidden');
+                      overlay.classList.add('hidden');
+                  });
+              </script>
+          </section>
         </div>
-        
-        <div class="px-5">
-          <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida.</h1>
-        </div>
-      </section>
-    </div>
 
     <script src="app.js"></script>
+    <script type="text/javascript"  src="https://apiv2.popupsmart.com/api/Bundle/388367" async></script>
+
   </body>
 </html>

@@ -8,7 +8,7 @@ html, body {
 
 .hline::before {
     content: "";
-    @apply block w-96 h-1 bg-input rounded-full my-2 mx-auto;
+    @apply block w-36 h-1 bg-input rounded-full my-2 mx-auto;
 }
 
 .vline::before {
