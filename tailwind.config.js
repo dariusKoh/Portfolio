@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./*.{html,js}",
-    "./node_modules/tw-elements/dist/js/**/*.js"],
+  content: ["./*.{html,js}", "./node_modules/tw-elements/dist/js/**/*.js"],
   theme: {
     extend: {
       //adding my own themes
@@ -14,6 +12,7 @@ module.exports = {
 
       //Setup of the Colours
       colors: {
+        logo: "#EAEAFF",
         headc: "#101010",
         bodyc: "#141416",
         selectedtext: "#A3A3FF",

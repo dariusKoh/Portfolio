@@ -24,21 +24,14 @@
     <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
   </head>
 
-  <body class="text-white pb-12">
+  <body class="text-white pb-12 bg-headc">
     <!-- Header -->
     <header class="sticky top-0 z-50 justify-between items-center mx-auto w-full">
       <nav role="navigation" class="flex justify-between items-center h-20 bg-headc text-white relative">
       <!-- Logo (my name) -->
-      <a href="index.html" class="pl-6 text-2xl text-gray-400 flex font-bold font-poppins">Darius Koh</a>
-      <!-- Menu Bar (fake) -->
-      <div
-        class="px-12 cursor-pointer md:hidden hover:bg-clip-border"
-        id="bars"
-      >
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <!-- Menu Bar Items -->
-      <div class="hidden md:block items-center space-x-5 px-6" id="menu">
+      <a href="index.html" class="pl-6 text-2xl text-logo flex font-bold font-poppins">Darius Koh</a>
+      <!-- Nav Bar Items -->
+      <div class="hidden sm:block items-center space-x-5 px-6" id="menu">
         <a href="#competitions" class="p-4">Competitions</a>
         <a href="#enrichment" class="p-4">Enrichment</a>
         <a href="#projects" class="p-4">Projects</a>
@@ -48,13 +41,13 @@
 
     <div class="bg-headc">
       <!-- Introduction -->
-      <section class="md:grid md:grid-flow-col md:gap-5 w-full bg-body h-screen md:py-44">
+      <section class="md:grid md:grid-flow-col md:gap-5 w-full bg-body h-fit md:py-44">
         <!-- Title + Icons -->
         <div class="order-1 md:col-span-15 pt-28">
           <!-- Title & Subtitle -->
           <div>
             <!-- Title (my name) -->
-            <h1 class="whitespace-nowrap font-bold text-7xl text-center md:text-left md:px-10">Darius Koh</h1>
+            <h1 class="whitespace-nowrap font-poppins font-bold text-7xl text-center md:text-left md:px-10">Darius Koh</h1>
             <!-- Subtitle -->
             <h2 class="text-3xl text-center md:text-left md:pl-12 pt-1">Student</h2>
           </div>
@@ -82,16 +75,20 @@
           </div>
         </div>
         <!-- Border Line -->
-        <h2 class="order-2 fline py-5 md:pt-32 md:px-15"></h2>
+        <h2 class="order-2 fline py-5 md:pt-32 xl:px-15"></h2>
         <!-- Introduction -->
-        <div class="order-3 text-center md:text-left px-10 md:col-span-5 align-middle md:m-auto">
-          <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida.</h1>
+        <div class="order-3 text-center md:text-left px-10 md:col-span-5 align-middle md:m-auto whitespace-pre-line">
+          <h1>I'm a 16-year-old student pursuing Computing+ in the School of Science and Technology, Singapore.
+
+              My interest in programming started with Robotics in primary school, and I continue to explore my interest through my school's Applied Subject and  ICT Talent Development Program. This has given me opportunities to join events and competitions to learn and gain insights into areas such as machine learning and how to make hardware and software work together.  
+              
+              A majority of my experience in coding is self-taught, as I am passionate about learning new things and applying technology to impact lives positively.
+              
+              On this website are the recent projects, competitions and enrichment I have taken as I continue exploring my interest in ICT.</h1>
         </div>
 
       </section>
     </div>
-
-
 
     <!-- Competitions -->
     <div>
@@ -103,7 +100,7 @@
           <h2  class="hline"> </h2>
         </div>
         <!-- Brief Description of competitions-->
-        <div class="px-5">
+        <div class="px-10">
           <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida.</h1>
         </div>
 
@@ -150,19 +147,20 @@
             <!-- Compeition Box 2 -->
             <button class="space-y-8 my-8" id="comp2">
               <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
-                
                 <!-- logo -->
                 <div class="mb-6 lg:mb-0">
-                  <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
-
+                  <img src="img/*.png" alt="img" class="object-contain h-36 w-36 lg:h-auto lg:w-auto">
                 </div>
 
                 <!-- info -->
                 <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
                   <h3 class="text-white text-3xl font-semibold">Tech For Good 2021</h3>
 
-                  <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
-              </button>
+                  <p class="pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                  <div class="text-center">
+                    <img src="img/*.png" alt="" class="object-contain h-36 w-36">
+                  </div>
+                </button>
 
                   <!-- Overlay element for modal -->
                   <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
@@ -183,19 +181,20 @@
             <!-- Compeition Box 3 -->
             <button class="space-y-8 my-8" id="comp3">
               <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
-                
                 <!-- logo -->
                 <div class="mb-6 lg:mb-0">
-                  <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
-
+                  <img src="img/*.png" alt="img" class="object-contain h-36 w-36 lg:h-auto lg:w-auto">
                 </div>
 
                 <!-- info -->
                 <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
                   <h3 class="text-white text-3xl font-semibold">Australian Informatics Olympiad 2021</h3>
 
-                  <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
-              </button>
+                  <p class="pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                  <div class="text-center">
+                    <img src="img/*.png" alt="" class="object-contain h-36 w-36">
+                  </div>
+                </button>
 
                   <!-- Overlay element for modal -->
                   <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
@@ -216,19 +215,20 @@
             <!-- Compeition Box 4 -->
             <button class="space-y-8 my-8" id="comp4">
               <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
-                
                 <!-- logo -->
                 <div class="mb-6 lg:mb-0">
-                  <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
-
+                  <img src="img/*.png" alt="img" class="object-contain h-36 w-36 lg:h-auto lg:w-auto">
                 </div>
 
                 <!-- info -->
                 <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
                   <h3 class="text-white text-3xl font-semibold">HackWise 2020</h3>
 
-                  <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
-              </button>
+                  <p class="pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                  <div class="text-center">
+                    <img src="img/*.png" alt="" class="object-contain h-36 w-36">
+                  </div>
+                </button>
 
                   <!-- Overlay element for modal -->
                   <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
@@ -345,19 +345,20 @@
                 <!-- Enrichment Box 1 -->
                 <button class="space-y-8 my-8" id="enr1">
                   <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
-                    
                     <!-- logo -->
-                    <div class="mb-6 lg:mb-0">
-                      <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
+                <div class="mb-6 lg:mb-0">
+                  <img src="img/*.png" alt="img" class="object-contain h-36 w-36 lg:h-auto lg:w-auto">
+                </div>
 
-                    </div>
+                <!-- info -->
+                <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                  <h3 class="text-white text-3xl font-semibold">Emerging Tech Values-in-Action 2022</h3>
 
-                    <!-- info -->
-                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-                      <h3 class="text-white text-3xl font-semibold">Emerging Tech Values-in-Action 2022</h3>
-
-                      <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
-                  </button>
+                  <p class="pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                  <div class="text-center">
+                    <img src="img/*.png" alt="" class="object-contain h-36 w-36">
+                  </div>
+                </button>
 
                       <!-- Overlay element for modal -->
                       <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
@@ -378,19 +379,20 @@
                 <!-- Enrichment Box 2 -->
                 <button class="space-y-8 my-8" id="enr2">
                   <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
-                    
                     <!-- logo -->
-                    <div class="mb-6 lg:mb-0">
-                      <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
+                <div class="mb-6 lg:mb-0">
+                  <img src="img/*.png" alt="img" class="object-contain h-36 w-36 lg:h-auto lg:w-auto">
+                </div>
 
-                    </div>
+                <!-- info -->
+                <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                  <h3 class="text-white text-3xl font-semibold">Python Reinforcement Learning Camp 2022</h3>
 
-                    <!-- info -->
-                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-                      <h3 class="text-white text-3xl font-semibold">Python Reinforcement Learning Camp 2022</h3>
-
-                      <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
-                  </button>
+                  <p class="pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                  <div class="text-center">
+                    <img src="img/*.png" alt="" class="object-contain h-36 w-36">
+                  </div>
+                </button>
 
                       <!-- Overlay element for modal -->
                       <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
@@ -411,19 +413,20 @@
                 <!-- Enrichment Box 3 -->
                 <button class="space-y-8 my-8" id="enr3">
                   <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
-                    
                     <!-- logo -->
-                    <div class="mb-6 lg:mb-0">
-                      <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
+                <div class="mb-6 lg:mb-0">
+                  <img src="img/*.png" alt="img" class="object-contain h-36 w-36 lg:h-auto lg:w-auto">
+                </div>
 
-                    </div>
+                <!-- info -->
+                <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                  <h3 class="text-white text-3xl font-semibold">Swift Accelerator Programme 2020</h3>
 
-                    <!-- info -->
-                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-                      <h3 class="text-white text-3xl font-semibold">Swift Accelerator Programme 2020</h3>
-
-                      <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
-                  </button>
+                  <p class="pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                  <div class="text-center">
+                    <img src="img/*.png" alt="" class="object-contain h-36 w-36">
+                  </div>
+                </button>
 
                       <!-- Overlay element for modal -->
                       <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
@@ -444,19 +447,20 @@
                 <!-- Enrichment Box 4 -->
                 <button class="space-y-8 my-8" id="enr4">
                   <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
-                    
                     <!-- logo -->
-                    <div class="mb-6 lg:mb-0">
-                      <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
+                <div class="mb-6 lg:mb-0">
+                  <img src="img/*.png" alt="img" class="object-contain h-36 w-36 lg:h-auto lg:w-auto">
+                </div>
 
-                    </div>
+                <!-- info -->
+                <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                  <h3 class="text-white text-3xl font-semibold">Science Discovery Camp 2020</h3>
 
-                    <!-- info -->
-                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-                      <h3 class="text-white text-3xl font-semibold">Science Discovery Camp 2020</h3>
-
-                      <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
-                  </button>
+                  <p class="pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                  <div class="text-center">
+                    <img src="img/*.png" alt="" class="object-contain h-36 w-36">
+                  </div>
+                </button>
 
                       <!-- Overlay element for modal -->
                       <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
@@ -572,19 +576,20 @@
                 <!-- Projects Box 1 -->
                 <button class="space-y-8 my-8" id="pr1">
                   <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
-                    
                     <!-- logo -->
-                    <div class="mb-6 lg:mb-0">
-                      <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
+                <div class="mb-6 lg:mb-0">
+                  <img src="img/*.png" alt="img" class="object-contain h-36 w-36 lg:h-auto lg:w-auto">
+                </div>
 
-                    </div>
+                <!-- info -->
+                <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                  <h3 class="text-white text-3xl font-semibold">Personal Portfolio</h3>
 
-                    <!-- info -->
-                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-                      <h3 class="text-white text-3xl font-semibold">Personal Portfolio</h3>
-
-                      <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
-                  </button>
+                  <p class="pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                  <div class="text-center">
+                    <img src="img/*.png" alt="" class="object-contain h-36 w-36">
+                  </div>
+                </button>
 
                       <!-- Overlay element for modal -->
                       <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
@@ -605,19 +610,20 @@
                 <!-- Projects Box 2 -->
                 <button class="space-y-8 my-8" id="pr2">
                   <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
-                    
                     <!-- logo -->
-                    <div class="mb-6 lg:mb-0">
-                      <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
+                <div class="mb-6 lg:mb-0">
+                  <img src="img/*.png" alt="img" class="object-contain h-36 w-36 lg:h-auto lg:w-auto">
+                </div>
 
-                    </div>
+                <!-- info -->
+                <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                  <h3 class="text-white text-3xl font-semibold">Adaptive Gaming Controller</h3>
 
-                    <!-- info -->
-                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-                      <h3 class="text-white text-3xl font-semibold">Adaptive Gaming Controller</h3>
-
-                      <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
-                  </button>
+                  <p class="pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                  <div class="text-center">
+                    <img src="img/*.png" alt="" class="object-contain h-36 w-36">
+                  </div>
+                </button>
 
                       <!-- Overlay element for modal -->
                       <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
@@ -638,19 +644,20 @@
                 <!-- Projects Box 3 -->
                 <button class="space-y-8 my-8" id="pr3">
                   <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
-                    
                     <!-- logo -->
-                    <div class="mb-6 lg:mb-0">
-                      <img src="img/*.png" alt="img" class="object-contain h-36 w-36">
+                <div class="mb-6 lg:mb-0">
+                  <img src="img/*.png" alt="img" class="object-contain h-36 w-36 lg:h-auto lg:w-auto">
+                </div>
 
-                    </div>
+                <!-- info -->
+                <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                  <h3 class="text-white text-3xl font-semibold">MacRitchie Trails</h3>
 
-                    <!-- info -->
-                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-                      <h3 class="text-white text-3xl font-semibold">MacRitchie Trails</h3>
-
-                      <p class="text-secondary pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
-                  </button>
+                  <p class="pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt pulvinar lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sapien id nulla convallis ornare at ac ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eleifend mauris ac diam vestibulum elementum. Sed sit amet malesuada nisl. Quisque sit amet semper quam. Nunc vitae aliquet nunc, vel semper augue. Aliquam nec ipsum ultrices justo aliquet finibus. Cras id suscipit enim. Aliquam ultrices consequat enim eget gravida</p>
+                  <div class="text-center">
+                    <img src="img/*.png" alt="" class="object-contain h-36 w-36">
+                  </div>
+                </button>
 
                       <!-- Overlay element for modal -->
                       <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
