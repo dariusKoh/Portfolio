@@ -4,7 +4,8 @@
   "description": "test 2",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "build": "tailwind build -i ./src/input.css -o ./dist/output.css",
+    "watch": "tailwind build -i ./src/input.css -o ./dist/output.css -w"
   },
   "repository": {
     "type": "git",
@@ -18,10 +19,11 @@
   },
   "homepage": "https://github.com/dariusKoh/dariuskoh.github.io#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
     "tailwindcss": "^3.1.5"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.7",
     "npm": "^8.13.2",
     "postcss-cli": "^10.0.0",
     "tailwind": "^4.0.0"
