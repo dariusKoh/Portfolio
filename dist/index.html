@@ -25,31 +25,34 @@
 
   <body class="bg-body text-white pb-12">
   
-    <header class="sticky top-0 z-50 justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <header class="sticky top-0 z-50 justify-between items-center mx-auto w-full">
       <nav
       role="navigation"
       class="flex justify-between items-center h-20 bg-black text-white relative"
     >
       <a href="index.html" class="pl-6 text-2xl text-gray-400 flex font-bold">Darius Koh</a>
       <div
-        class="px-6 cursor-pointer md:hidden hover\:bg-clip-border"
+        class="px-12 cursor-pointer md:hidden hover:bg-clip-border"
         id="bars"
       >
         <i class="fa-solid fa-bars"></i>
       </div>
-      <div class="hidden md:block items-center space-x-12" id="menu">
-        <a href="#Competitions" class="p-4">Competitions</a>
-        <a href="#" class="p-4">Enrichment</a>
-        <a href="#" class="p-4">Projects</a>
+      <div class="hidden md:block items-center space-x-5 px-6" id="menu">
+        <a href="#Comp" class="p-4">Competitions</a>
+        <a href="#Enrich" class="p-4">Enrichment</a>
+        <a href="#Proj" class="p-4">Projects</a>
       </div>
     </nav>
     </header>
 
-    <div class="min-h-screen">
-      <section class="w-full bg-black min-h-screen">
-
-        <h1 class="text-6xl text-center">Darius Koh</h1>
-        <div class="header-icons text-6xl text-center">
+    <div>
+      <section class="grid grid-rows-3 md:grid-cols-2 md:gap-6 gap-y-0 w-full bg-black h-screen md:py-48 py-48">
+        <div class="order-1">
+          <h1 class="whitespace-nowrap font-bold text-7xl text-center md:text-left md:pl-10">Darius Koh</h1>
+          <h2 class="text-3xl text-center md:text-left md:pl-12 pt-1">Student</h2>
+        </div>
+        
+        <div class="order-2 md:order-3 header-icons text-5xl text-center md:text-left pt-5 space-x-5 md:pl-36">
           <a
             aria-label="Send email"
             href="mailto:darius_koh_kai_keat@s2019.ssts.edu.sg"
@@ -63,11 +66,18 @@
             target="_blank"
             href="https://github.com/dariusKoh"
             ><i
-              class="icon fa fa-github transform hover:text-gray-500"
+              class="icon fa fa-github transform hover:text-gray-500 pl-5"
               aria-hidden="true"
             ></i
           ></a>
         </div>
+
+        <div class="order-3 md:order-2 md:text-center text-left px-10">
+          <h1 class="text-left">I am a student that is passionate about technology and strives to learn more about it.</h1>
+        </div> 
+
+
+        
         
       </section>
     </div>
