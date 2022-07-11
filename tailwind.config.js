@@ -7,7 +7,6 @@ module.exports = {
       fontFamily: {
         'Lato': ['Lato', 'sans-serif'],
         'Poppins': ['Poppins', 'sans-serif'],
-        'Montserrat': ['Montserrat', 'sans-serif'],
         },
   
       //Setup of the Colours
