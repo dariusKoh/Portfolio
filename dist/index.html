@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Darius' Portfolio</title>
-    
-
 
     <link
       rel="stylesheet"
@@ -25,23 +23,22 @@
     <link rel="stylesheet" href="output.css" />
   </head>
 
-  <body>
-    
-    <header class="sticky top-0 z-50">
+  <body class="bg-body text-white pb-12">
+  
+    <header class="sticky top-0 z-50 justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
       <nav
       role="navigation"
-      class="flex justify-between items-center h-16 bg-black text-white relative"
+      class="flex justify-between items-center h-20 bg-black text-white relative"
     >
-      <a href="index.html" class="pl-6 text-2xl text-gray-400">Darius Koh</a>
+      <a href="index.html" class="pl-6 text-2xl text-gray-400 flex font-bold">Darius Koh</a>
       <div
         class="px-6 cursor-pointer md:hidden hover\:bg-clip-border"
         id="bars"
       >
         <i class="fa-solid fa-bars"></i>
       </div>
-      <div class="hidden md:block items-center" id="menu">
-        <a href="#" class='p-4 hover:text-bold'>Home</a>
-        <a href="#" class="p-4">Introduction</a>
+      <div class="hidden md:block items-center space-x-12" id="menu">
+        <a href="#Intro" class="p-4">Introduction</a>
         <a href="#Competitions" class="p-4">Competitions</a>
         <a href="#" class="p-4">Enrichment</a>
         <a href="#" class="p-4">Projects</a>
@@ -49,332 +46,39 @@
     </nav>
     </header>
 
-    <div class="header bg-body text-white text-center relative">
-      <h1>
-        <span class="site-title text-6xl">Darius Koh</span>
-      </h1>
-      <div class="header-icons text-6xl">
-        <a
-          aria-label="Send email"
-          href="mailto:darius_koh_kai_keat@s2019.ssts.edu.sg"
-          ><i
-            class="icon fa fa-envelope transform hover:text-gray-500"
-            aria-hidden="true"
-          ></i
-        ></a>
-        <a
-          aria-label="My Github"
-          target="_blank"
-          href="https://github.com/dariusKoh"
-          ><i
-            class="icon fa fa-github transform hover:text-gray-500"
-            aria-hidden="true"
-          ></i
-        ></a>
-      </div>
+    <div>
+      <section class="w-full h-screen bg-black min-h-screen">
+        <h2 id="Intro" class="secondary-title">Introduction</h2>
 
-      <div class="header-links">
-        <a class="link" href="#competitions" data-scroll>Competitions</a>
-        <a class="link" href="#enrichment" data-scroll>Enrichment</a>
-        <a class="link" href="#projects" data-scroll>Projects</a>
-      </div>
+        <h1 class="text-6xl text-center">Darius Koh</h1>
+        <div class="header-icons text-6xl text-center">
+          <a
+            aria-label="Send email"
+            href="mailto:darius_koh_kai_keat@s2019.ssts.edu.sg"
+            ><i
+              class="icon fa fa-envelope transform hover:text-gray-500"
+              aria-hidden="true"
+            ></i
+          ></a>
+          <a
+            aria-label="My Github"
+            target="_blank"
+            href="https://github.com/dariusKoh"
+            ><i
+              class="icon fa fa-github transform hover:text-gray-500"
+              aria-hidden="true"
+            ></i
+          ></a>
+        </div>
+        
+      </section>
     </div>
-    <a class="down" href="#about" data-scroll
-      ><i class="icon fa fa-chevron-down" aria-hidden="true"></i
-    ></a>
 
-    <!-- Introduction -->
-    <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
-        Hi, I am <strong>Darius Koh</strong>
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">Student</p>
-      <img src="" alt="" />
-    </section>
 
-    <!-- Competitions -->
-    <section class="user-details" id="competitions">
-      <h2 class="section__title">Competitions</h2>
-      <p class="section__subtitle">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
 
-      <!-- Competition item 01 -->
-      <div class="projects">
-        <!-- Competition item 01 image -->
-        <div class="images">
-          <img alt="" src="" />
-        </div>
-        <!-- Competition item 01 contents -->
-        <div class="contents">
-          <h3>Competition Title</h3>
-          <ul>
-            <li>Competition Detials</li>
-          </ul>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <!-- Competition item 01 link -->
-          <a class="project-link" href="#">Check it out</a>
-        </div>
-      </div>
-
-      <!-- Competition item 02 -->
-      <div class="projects">
-        <!-- Competition item 02 image -->
-        <div class="images">
-          <img alt="" src="" />
-        </div>
-        <!-- Competition item 02 contents -->
-        <div class="contents">
-          <h3>Competition Title</h3>
-          <ul>
-            <li>Competition Detials</li>
-          </ul>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <!-- Competition item 02 link -->
-          <a class="project-link" href="#">Check it out</a>
-        </div>
-      </div>
-
-      <!-- Competition item 03 -->
-      <div class="projects">
-        <!-- Competition item 03 image -->
-        <div class="images">
-          <img alt="" src="" />
-        </div>
-        <!-- Competition item 03 contents -->
-        <div class="contents">
-          <h3>Competition Title</h3>
-          <ul>
-            <li>Competition Detials</li>
-          </ul>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <!-- Competition item 03 link -->
-          <a class="project-link" href="#">Check it out</a>
-        </div>
-      </div>
-
-      <!-- Competition item 04 -->
-      <div class="projects">
-        <!-- Competition item 04 image -->
-        <div class="images">
-          <img alt="" src="" />
-        </div>
-        <!-- Competition item 04 contents -->
-        <div class="contents">
-          <h3>Competition Title</h3>
-          <ul>
-            <li>Competition Detials</li>
-          </ul>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <!-- Competition item 04 link -->
-          <a class="project-link" href="#">Check it out</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Enrichment -->
-    <section class="user-details" id="enrichment">
-      <h2 class="section__title">Enrichment</h2>
-      <p class="section__subtitle">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-
-      <!-- Enrichment item 01 -->
-      <div class="projects">
-        <!-- Enrichment item 01 image -->
-        <div class="images">
-          <img alt="" src="" />
-        </div>
-        <!-- Enrichment item 01 contents -->
-        <div class="contents">
-          <h3>Enrichment Title</h3>
-          <ul>
-            <li>Enrichment Detials</li>
-          </ul>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <!-- Enrichment item 01 link -->
-          <a class="project-link" href="#">Check it out</a>
-        </div>
-      </div>
-
-      <!-- Enrichment item 02 -->
-      <div class="projects">
-        <!-- Enrichment item 02 image -->
-        <div class="images">
-          <img alt="" src="" />
-        </div>
-        <!-- Enrichment item 02 contents -->
-        <div class="contents">
-          <h3>Enrichment Title</h3>
-          <ul>
-            <li>Enrichment Detials</li>
-          </ul>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <!-- Enrichment item 02 link -->
-          <a class="project-link" href="#">Check it out</a>
-        </div>
-      </div>
-
-      <!-- Enrichment item 03 -->
-      <div class="projects">
-        <!-- Enrichment item 03 image -->
-        <div class="images">
-          <img alt="" src="" />
-        </div>
-        <!-- Enrichment item 03 contents -->
-        <div class="contents">
-          <h3>Enrichment Title</h3>
-          <ul>
-            <li>Enrichment Detials</li>
-          </ul>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <!-- Enrichment item 03 link -->
-          <a class="project-link" href="#">Check it out</a>
-        </div>
-      </div>
-
-      <!-- Enrichment item 04 -->
-      <div class="projects">
-        <!-- Enrichment item 04 image -->
-        <div class="images">
-          <img alt="" src="" />
-        </div>
-        <!-- Enrichment item 04 contents -->
-        <div class="contents">
-          <h3>Enrichment Title</h3>
-          <ul>
-            <li>Enrichment Detials</li>
-          </ul>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <!-- Enrichment item 04 link -->
-          <a class="project-link" href="#">Check it out</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="user-details" id="projects">
-      <h2 class="section__title">My Projects</h2>
-      <p class="section__subtitle"></p>
-
-      <!-- project item 01 -->
-      <div class="projects">
-        <!-- project item 01 image -->
-        <div class="images">
-          <img alt="MacRitchieTrails" src="img/MacRitchieTrails.webp" />
-        </div>
-        <!-- project item 01 contents -->
-        <div class="contents">
-          <h3>Project Title</h3>
-          <ul>
-            <li>Project Detials</li>
-          </ul>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <!-- project item 01 link -->
-          <a class="project-link" href="#">Check it out</a>
-        </div>
-      </div>
-
-      <!-- project item 02 -->
-      <div class="projects">
-        <!-- project item 02 image -->
-        <div class="images">
-          <img alt="AGC1" src="img/agc1.jpeg" />
-        </div>
-        <!-- project item 01 contents -->
-        <div class="contents">
-          <h3>Project Title</h3>
-          <ul>
-            <li>Project Details</li>
-          </ul>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <!-- project item 01 link -->
-          <a class="project-link" href="#">Check it out</a>
-        </div>
-      </div>
-
-      <!-- project item 03 -->
-      <div class="projects">
-        <!-- project item 02 image -->
-        <div class="images">
-          <img alt="AGC1" src="img/agc1.jpeg" />
-        </div>
-        <!-- project item 01 contents -->
-        <div class="contents">
-          <h3>Project Title</h3>
-          <ul>
-            <li>Project Details</li>
-          </ul>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <!-- project item 01 link -->
-          <a class="project-link" href="#">Check it out</a>
-        </div>
-      </div>
-    </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="text-6xl text-center">
       <!-- list of socials -->
       <!-- email address -->
       <ul class="social-list">
@@ -383,7 +87,7 @@
             class="social-list__link"
             href="mailto:darius_koh_kai_keat@s2019.ssts.edu.sg"
           >
-            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
           </a>
         </li>
       </ul>
@@ -391,7 +95,7 @@
       <ul class="social-list">
         <li class="social-list__item">
           <a class="social-list__link" href="https://github.com/dariusKoh">
-            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
           </a>
         </li>
       </ul>
