@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./dist/*.{html,js}'],
+  content: ['./*.{html,js}'],
   theme: {
      extend: { //adding my own themes
       //Setup of the Fonts
@@ -12,8 +12,12 @@ module.exports = {
   
       //Setup of the Colours
       colors: {
+        grad1: '#101010',
+        grad2: '#141416',
+        grad3: '#19191C',
+        grad4: '#1D1D23',
         ends: '#101010',
-        body: '#2A2A35',
+        body: '#141416',
         selectedtext: '#A3A3FF',
         sitetheme: '#3F3FFF',
         nav: '#404053',
