@@ -1,3 +1,3 @@
 # Darius' Portfolio
 
-### Created using Tailwind CSS and HTML
+Made by Darius Koh using tailwindcss and HTML.
