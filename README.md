@@ -1,3 +1,3 @@
 # Darius' Portfolio
 
-## Created using Tailwind CSS and HTML
+### Created using Tailwind CSS and HTML
