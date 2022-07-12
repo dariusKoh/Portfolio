@@ -12,6 +12,11 @@ body {
   @apply block w-36 h-1 bg-input rounded-full my-2 mx-auto;
 }
 
+.shline::before {
+  content: "";
+  @apply block w-96 h-1 bg-white rounded-full my-2 mx-auto;
+}
+
 .vline::before {
   content: "";
   @apply block w-1 h-36 bg-input rounded-full my-2 mx-auto;

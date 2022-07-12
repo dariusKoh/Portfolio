@@ -107,7 +107,7 @@
         </div>
 
         <!-- Competition List -->
-        <div class="container mt-5 flex justify-between items-center mx-8 md:px-14 lg:px-24 w-full">
+        <div class="container mt-5 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
           <section class="w-full">
             
             <!-- Compeition Box 1 -->
@@ -635,29 +635,8 @@
             </div>
 
             <!-- Projects List -->
-            <div class="container mt-5 flex justify-between items-center mx-20 px-8 md:px-14 lg:px-24 w-full">
+            <div class="container mt-5 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
               <section class="w-full">
-                
-                <!-- Projects Box 1 -->
-                <button class="space-y-8 my-8" id="pr1">
-                  <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
-
-                <!-- info -->
-                <div class="flex flex-wrap justify-center text-center lg:text-left ">
-                  <h3 class="text-white text-3xl font-semibold">Personal Portfolio</h3>
-
-                  <p class="pt-5 whitespace-pre-line">
-                    My portfolio website, created using Tailwind CSS and HTML. This project was made by myself.
-                    
-                    I created this website using TailWind CSS and HTML to aid me with my EAE applications.
-
-                    This project took about 2 weeks to develop.
-
-                    <a href="https://github.com/dariusKoh/dariuskoh.github.io" class="text-blue-300">https://github.com/dariusKoh/dariuskoh.github.io</a>
-                  </p>
-
-                </button>
-
                 <!-- Projects Box 2 -->
                 <button class="space-y-8 my-8" id="pr2">
                   <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl outline outline-0 hover:outline-1" id="#comp1">
@@ -745,25 +724,29 @@
                           </div>
                       </div>
 
+              <!-- Projects Box 1 -->
+                <div class="shline"> 
+
+                </div>
+
+                <button class="space-y-8 my-8" id="pr1">
+                  <div class="w-full border border-theme p-16 lg:px-32 lg:py-20 lg:space-x-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap rounded-xl" id="#comp1">
+
+                <!-- info -->
+                <div class="flex flex-wrap justify-center text-center lg:text-left ">
+                  <h3 class="text-white text-3xl font-semibold">Personal Portfolio</h3>
+
+                  <p class="pt-5 whitespace-pre-line">
+                    This is my portfolio website, created using Tailwind CSS and HTML.
+                    
+                    I created this website using TailWind CSS and HTML to aid me with my EAE applications.
+
+                    <a href="https://github.com/dariusKoh/dariuskoh.github.io" class="text-blue-300">https://github.com/dariusKoh/dariuskoh.github.io</a>
+                  </p>
+
+                </button>
+
               <!-- Running the Projects modals -->
-              <script>
-                  var openButton9 = document.getElementById('pr1');
-                  var dialog9 = document.getElementById('modalp1');
-                  var closeButton9 = document.getElementById('pclose1');
-                  var overlay9 = document.getElementById('overlay');
-
-                  // show the overlay and the dialog
-                  openButton9.addEventListener('click', function () {
-                      dialog9.classList.remove('hidden');
-                      overlay9.classList.remove('hidden');
-                  });
-
-                  // hide the overlay and the dialog
-                  closeButton9.addEventListener('click', function () {
-                      dialog9.classList.add('hidden');
-                      overlay9.classList.add('hidden');
-                  });
-              </script>
               <script>
                   var openButton0 = document.getElementById('pr2');
                   var dialog0 = document.getElementById('modalp2');
@@ -802,6 +785,8 @@
               </script>
           </section>
         </div>
+
+    
 
     <script src="app.js"></script>
     <script type="text/javascript"  src="https://apiv2.popupsmart.com/api/Bundle/388367" async></script>
