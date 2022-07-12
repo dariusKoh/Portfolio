@@ -19,7 +19,7 @@ module.exports = {
         sitetheme: "#3F3FFF",
         nav: "#404053",
         badsecondary: "#9191A4",
-        badbadge: "#3F3F51",
+        badge: "#3F3F51",
         badinputborder: "#565666",
         input: "#2A2A35",
       },
